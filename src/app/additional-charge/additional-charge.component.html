@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="payRequest.customerId" placeholder="customer Id">
+<input type="number" [(ngModel)]="payRequest.amount" placeholder="amount">
+<select [(ngModel)]="payRequest.currency">
+    <option value="USD">USD</option>
+    <option value="AUD">AUD</option>
+    <option value="GBP">GBP</option>
+</select>
+
+<button (click)="confirmPayment()">Submitt</button>

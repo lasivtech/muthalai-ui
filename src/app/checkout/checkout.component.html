@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="paymentIntentRequest.emailId" placeholder="email">
+<input type="number" [(ngModel)]="paymentIntentRequest.amount" placeholder="amount">
+<!-- <select [(ngModel)]="paymentIntentRequest.currency">
+    <option value="USD">USD</option>
+    <option value="AUD">AUD</option>
+    <option value="GBP">GBP</option>
+</select> -->
+<a href=""
+[routerLink]="['/payment']"
+[queryParams]="{ emailId: this.paymentIntentRequest.emailId,amount:this.paymentIntentRequest.amount }"
+>
+subbbbmmmmm</a>
