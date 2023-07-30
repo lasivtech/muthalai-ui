@@ -1,5 +1,5 @@
 //export const DUMMY_SERVER_API_URL: string = 'https://sorp.onrender.com';
-export const DUMMY_SERVER_API_URL: string = 'http://localhost:81';
+export const DUMMY_SERVER_API_URL: string = 'https://muthalai-java.onrender.com';
 
 export const STUDENT_REGISTRATION_URL: string = '/registration/student';
 export const TUTOR_REGISTRATION_URL: string = '/registration/tutor';
