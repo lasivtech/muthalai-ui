@@ -1,0 +1,7 @@
+<div>
+    <input type="text" placeholder="card number" [(ngModel)]="paymentIntentRequest.cardDetail.cardNumber" />
+    <input type="text" placeholder="exp month (mm)" [(ngModel)]="paymentIntentRequest.cardDetail.expMonth"/>
+    <input type="text" placeholder="exp year (yyyy)" [(ngModel)]="paymentIntentRequest.cardDetail.expYear"/>
+    <input type="text" placeholder="cvv" [(ngModel)]="paymentIntentRequest.cardDetail.cvv"/>
+    <button (click)="onSubmit()">Done</button>
+</div>

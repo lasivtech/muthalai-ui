@@ -8,13 +8,15 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AdditionalChargeComponent } from './additional-charge/additional-charge.component';
+import { FastCheckoutComponent } from './fast-checkout/fast-checkout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaymentComponent,
     CheckoutComponent,
-    AdditionalChargeComponent
+    AdditionalChargeComponent,
+    FastCheckoutComponent
   ],
   imports: [
     BrowserModule,

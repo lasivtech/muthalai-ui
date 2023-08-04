@@ -1,5 +1,5 @@
-//export const DUMMY_SERVER_API_URL: string = 'https://sorp.onrender.com';
 export const DUMMY_SERVER_API_URL: string = 'https://muthalai-java.onrender.com';
+//export const DUMMY_SERVER_API_URL: string = 'http://localhost:81';
 
 export const STUDENT_REGISTRATION_URL: string = '/registration/student';
 export const TUTOR_REGISTRATION_URL: string = '/registration/tutor';
@@ -11,6 +11,9 @@ export const CREATE_STRIPE_PAYMENT_INTENT_URL =
   '/payment/stripe/create-payment-intent';
 export const CREATE_STRIPE_PAYMENT_CONFIRMATION_URL: string =
   '/payment/stripe/confirm-payment';
+
+  export const STRIPE_PAY_NO_SECURE: string =
+  '/payment/stripe/payment-no-secure';
 
 export const CREATE_STRIPE_PAYMENT_ADDITIOINALPAY_URL: string =
   '/payment/stripe/additional-payment';
