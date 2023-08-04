@@ -1,4 +1,9 @@
 <div>
+    <h1>Amount</h1>
+    <input type="text" [(ngModel)]="paymentIntentRequest.amount"/>
+</div>
+<div>
+    <h1>Card details</h1>
     <input type="text" placeholder="card number" [(ngModel)]="paymentIntentRequest.cardDetail.cardNumber" />
     <input type="text" placeholder="exp month (mm)" [(ngModel)]="paymentIntentRequest.cardDetail.expMonth"/>
     <input type="text" placeholder="exp year (yyyy)" [(ngModel)]="paymentIntentRequest.cardDetail.expYear"/>
