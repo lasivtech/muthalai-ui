@@ -24,6 +24,8 @@ export class FastCheckoutComponent implements OnInit {
       cvv: '123'
     }
   }
+
+  status="idle";
   
   constructor(
     private restApi: RestApiService,
@@ -34,16 +36,18 @@ export class FastCheckoutComponent implements OnInit {
   }
 
   onSubmit():void{
-    console.log(this.paymentIntentRequest);
+    this.status = "loading... waittt....";
     this.restApi.postItem(STRIPE_PAY_NO_SECURE,
       JSON.stringify(this.paymentIntentRequest),
       (response: any) => {
         alert('check console for actual'+response );
         console.log(response);
+        this.status = response.text;
       },
       (errorResponse: any) => {
         alert('check console for actual :: ' +errorResponse, );
         console.log(errorResponse);
+        this.status = errorResponse.text;
       }
     );
   }
